@@ -44,7 +44,7 @@ function create ()
 
     var lemming = this.add.follower(curve, 50, 400, 'lemming');
 
-    lemming.start({
+    lemming.startFollow({
         duration: 6000,
         yoyo: true,
         repeat: -1,
@@ -55,11 +55,11 @@ function create ()
 
         if (lemming.isFollowing())
         {
-            lemming.pause();
+            lemming.pauseFollow();
         }
         else
         {
-            lemming.resume();
+            lemming.resumeFollow();
         }
 
     });
